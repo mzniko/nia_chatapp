@@ -12,11 +12,12 @@ function send404(response) {
   response.end();
 }
 
-// MIME files
+// send files
 
 function sendFile(response, filePath, fileContents) {
-  response.writeHead(200, {'Content-Type': mime.lookup(path.basename(filepath))});
-  response.end();
+  response.writeHead(200, {"content-type": mime.lookup(path.basename(filePath))}
+    );
+  response.end(fileContents);
 }
 
 // Cache files
