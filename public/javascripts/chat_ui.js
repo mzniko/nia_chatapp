@@ -2,8 +2,8 @@ function divEscapedContentElement(message) {
   return $('<div></div>').text(message);
 }
 
-funtion divSystemContentElement(message) {
-  return $('div></div').html('<i>' + message + '</i>');
+function divSystemContentElement(message) {
+  return $('<div></div').html('<i>' + message + '</i>');
 }
 
 function processUserInput(chatApp, socket) {

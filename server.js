@@ -66,5 +66,5 @@ server.listen(3000, function() {
 
 // Socket.io server
 
-var chatServer = require('.lib/chat_server');
+var chatServer = require('./lib/chat_server.js');
 chatServer.listen(server);
